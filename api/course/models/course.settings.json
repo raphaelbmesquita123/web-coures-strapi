@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "Course",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "curriculum": {
+      "type": "dynamiczone",
+      "components": [
+        "curriculum.exercise",
+        "curriculum.lecture"
+      ]
+    },
+    "price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "payed_clients": {
+      "type": "text",
+      "required": false,
+      "default": "raphaelbmesquita@gmail.com"
+    }
+  }
+}
