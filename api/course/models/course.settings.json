@@ -13,14 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "slug": {
       "type": "uid",
       "targetField": "title"
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "image": {
       "collection": "file",
@@ -31,14 +33,13 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "curriculum": {
       "type": "dynamiczone",
       "components": [
-        "curriculum.exercise",
-        "curriculum.lecture"
+        "curriculum.video-course"
       ]
     },
     "price": {

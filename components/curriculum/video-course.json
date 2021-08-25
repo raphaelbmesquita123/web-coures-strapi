@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_curriculum_video_courses",
+  "info": {
+    "name": "Video Course",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
