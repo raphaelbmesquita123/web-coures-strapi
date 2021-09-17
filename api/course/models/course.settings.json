@@ -55,6 +55,10 @@
       "type": "text",
       "default": "raphaelbmesquita@gmail.com",
       "private": false
+    },
+    "certificate_description": {
+      "type": "text",
+      "required": true
     }
   }
 }

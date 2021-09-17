@@ -1,0 +1,8 @@
+{
+    "provider": "cloudinary",
+    "providerOptions": {
+        "cloud_name":"diwpscmrh" ,
+        "api_key": "863937418312888",
+        "api_secret": "4cvMiRv1t3_-LyCHrOq3zEope1s"
+    }
+}
