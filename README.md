@@ -1,3 +1,14 @@
-# Strapi application
+# Runing the project
+```js
+yarn
+``` 
+to install or 
+```js
+npm install
+```
 
-A quick description of your strapi application
+## After installing the dependencies
+
+```js
+yarn start
+```
